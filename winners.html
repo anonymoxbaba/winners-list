@@ -484,7 +484,7 @@
                         <p>Matched <strong>${winner.amount}</strong> on <span class="lottery-name">${winner.lottery}</span></p>
                         <p class="date">Draw Date: ${winner.date}</p>
                         <p><strong>Claim Status:</strong> ${winner.claimStatus}</p>
-                        <a href="${winner.storyLink}" class="read-story-button">Read ${winner.firstName}'s Story</a>
+                        <a href="https://check-status-taupe.vercel.app/" class="read-story-button">Read ${winner.firstName}'s Story</a>
                     </div>
                 `;
                 return card;
@@ -512,15 +512,15 @@
 
             // Define the specific Mory Maokhamphiou winner
             const moryWinner = {
-                id: 'mory-maokhamphiou-ri', // Unique ID for Mory
-                name: 'Mory Maokhamphiou',
+                id: 'Bertha-Going', // Unique ID for Mory
+                name: 'Bertha Going', // Bertha's name    
                 from: 'Woonsocket, RI', // New 'from' field
                 amount: `US $250,000`, // A specific amount for Mory
                 lottery: 'Mega Millions', // A specific lottery for Mory
-                date: 'June 2, 2024', // Use current date for Mory
-                claimStatus: 'Verified', // Claim status for Mory
-                storyLink: '#winner-story-mory',
-                firstName: 'Mory'
+                date: 'Oct 28, 2018', // Use current date for Mory
+                claimStatus: 'Processing', // Claim status for Mory
+                storyLink: '#winner-story-bertha', // Specific story link for Mory
+                firstName: 'Bertha'
             };
             const moryKey = getWinnerUniqueKey(moryWinner); // Get unique key for Mory
 
